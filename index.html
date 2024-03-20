@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-5">
+                        <div class="box has-background-info-light">
+                            <form action="">
+                                <input type="text" name="todo" class="input is-primary" placeholder="Текст задачи">
+                            </form>
+                        </div>
+                        <div class="box todo-cantainer has-background-info-light">
+                            <div class="todos mt-5">
+                                <div class="todo box p-3 is-hidden">
+                                    <div class="todo-text">
+                                        <input type="checkbox">
+                                        <div class="text">Todo text</div>
+                                    </div>
+                                    <div class="buttons">
+                                        <div class="button is-warning is-small">
+                                            Отредоктировать
+                                        </div>
+                                        <div class="button is-danger is-small">
+                                            Удалить
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-background"></div>
+                        <div class="modal-content">
+                            <div class="modal-text"></div>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
